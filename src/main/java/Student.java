@@ -66,8 +66,16 @@ class Student{
      */
     @Override
     public boolean equals(Object obj){
-        Student studentNumber = (Student)obj;
-        if (studentNumber.getStudentNumber().equals(this.studentNumber)){
+        if (obj==null){
+            return false;
+        }
+
+        if (obj.getClass()!=(this.getClass())){
+            return false;
+        }
+
+        Student Student = (Student)obj;
+        if (Student.getStudentNumber().equals(this.studentNumber)){
             return true;
         }
         return false;

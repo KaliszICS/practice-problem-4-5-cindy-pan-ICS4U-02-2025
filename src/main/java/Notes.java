@@ -18,5 +18,9 @@ class Notes {
 		// System.out.println(cat.hashCode());
 		Cat cat3 = cat.clone(); //-> needs to be replace
 		System.out.println(cat.equals(cat3));
+
+		Student s = new Student("Help", 0, "124567789");
+		System.out.println(s.equals(null));
+
 	}
 }
